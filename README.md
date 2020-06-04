@@ -2,6 +2,14 @@
 
 ## Overview
 
+The idea of this service is to show banners on different pages of a website.
+The management of banners as HTML snippets is done in a separate 
+[bsadmin](https://github.com/abramovd/bsadmin) service.
+
+This service periodically fetches data from admin management system via HTTP,
+caches data in memory and then responses to all the incoming HTTP requests with
+the best suited banner. 
+
 
 ## Tech
 
