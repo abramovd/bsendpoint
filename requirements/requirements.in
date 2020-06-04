@@ -1,0 +1,5 @@
+uvicorn
+requests-async
+requests
+fastapi
+python-dateutil

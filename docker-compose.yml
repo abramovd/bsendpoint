@@ -1,0 +1,15 @@
+# This compose file is intended only for local dev usage.
+version: "3.4"
+services:
+  bsendpoint:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: local
+    environment:
+      - BSADMIN_BASE_URL
+      - DEBUG
+    ports:
+      - "8089:8000"
+    volumes:
+      - .:/bsendpoint/
